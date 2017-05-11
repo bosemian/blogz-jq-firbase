@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blogz-firbase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="columns is-mobile">
+            <div class="column is-half is-offset-one-quarter">
+                <h2 class="title is-2 has-text-centered">Blogz-Firbase</h2>
+                <!-- Form -->
+                <form>
+                    <div class="field">
+                        <label class="label">Title</label>
+                        <p class="control">
+                            <input id="title" class="input is-primary" type="text" placeholder="title">
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label class="label">Content</label>
+                        <p class="control">
+                            <textarea id="content" class="textarea is-primary" placeholder="Textarea"></textarea>
+                        </p>
+                    </div>
+                    <div class="block">
+                        <a type="submit" id="btnSubmit" class="button is-primary">Submit</a>
+                    </div>
+                </form>
+                <!-- Form -->
+                <!-- box -->
+                <h2 class="title is-3 has-text-centered">Posts</h2>
+                <div id="postsList" class="content">
+
+                </div>
+                <!-- end box -->
+            </div>
+        </div>
+        <!-- end columns mobile -->
+    </div>
+    <!-- end container -->
+    
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
